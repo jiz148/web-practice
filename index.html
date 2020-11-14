@@ -2,10 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport", content="width=device-width, initial-scale=1">
         <title>Jin's Page</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 
         <link rel="stylesheet" href="scss/style.css">
     </head>
@@ -28,16 +33,16 @@
                             </a>
                         </div>
                     </div>
-                    <button class="navbar-toggler d-inline d-md-none" type="button" data-toggle="collapse" data-target="#navbar-toggle-target" aria-controls="navbar-toggle-target" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggle collapsed d-inline d-md-none" type="button" data-toggle="collapse" data-target="#navbar-toggle-target" aria-controls="navbar-toggle-target" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div> <!-- navbar -->
                 <div id="navbar-toggle-target" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        <li>
+                    <ul id="nav-list" class="navbar-nav">
+                        <li class="nav-item">
                             <a href="#">description</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a href="#">show cases</a>
                         </li>
                     </ul> <!-- nav-list -->
