@@ -6,7 +6,7 @@ a {
     color: black;
 }
 
-a:focus {
+a:hover {
     text-decoration: none;
 }
 
