@@ -1,4 +1,5 @@
 body {
+    min-width: 280px;
     font-family: Calibri, serif;
 }
 
@@ -9,6 +10,10 @@ a {
 a:focus, a:hover, a:active, a:visited {
     color: black;
     text-decoration: none;
+}
+
+a.navbar-brand {
+    max-width: 50%;
 }
 
 a.navbar-brand span {
@@ -34,4 +39,10 @@ a.navbar-brand span {
 
 #navbar-toggle-target li:hover, #navbar-toggle-target li:focus{
     background-color: darkcyan;
+}
+
+@media (max-width: 375px) {
+    a.navbar-brand span {
+        font-size: 1.5em;
+    }
 }
