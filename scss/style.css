@@ -2,8 +2,35 @@ body {
     font-family: Calibri, serif;
 }
 
+a {
+    color: black;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
 a.navbar-brand span {
     font-family: Arial, serif;
     font-weight: bold;
     font-size: 2.5em;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#navbar-toggle-target li {
+    background-color: darkturquoise;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 0;
+}
+
+#navbar-toggle-target li:hover, #navbar-toggle-target li:focus{
+    background-color: darkcyan;
 }
