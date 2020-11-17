@@ -8,7 +8,7 @@ a {
 }
 
 .container-fluid {
-    padding: 0;
+    padding: 0 0 0 0;
 }
 
 a:focus, a:hover, a:active, a:visited {
