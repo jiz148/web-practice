@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",
             function (event) {
                 count += 1;
                 if (count === 15) {
-                    document.querySelector("#header-nav a span").textContent = "I love Ning!";
+                    document.querySelector("#header-nav a span").textContent = "Love Ning!";
                 }
             }
             );
