@@ -36,9 +36,31 @@ document.addEventListener("DOMContentLoaded",
                 // call the server
                 $ajaxUtils.sendGetRequest("data/wujiang.json",
                     function (response) {
-                        document.querySelector("#wujiang-name").textContent = "名称：" + response.名称;
-                        document.querySelector("#wujiang-level").textContent = "等级：" + response.等级;
-                        document.querySelector("#wujiang-profession").textContent = "职业：" + response.职业;
+                        let wujiangName = document.querySelector("#wujiangInput").value;
+                        wujiang = response[wujiangName];
+                        if (wujiang === undefined) {
+                            wujiangTagList = document.querySelectorAll("#wujiangContainer div p")
+                            for (let i = 0; i < wujiangTagList.length; i++) {
+                                wujiangTagList[i].textContent = ""
+                            }
+                            document.querySelector("#wujiangName").textContent = "Did not find this Wujiang in record."
+                        }
+                        else {
+                            // assign values to web
+                            document.querySelector("#wujiangName").textContent = "名称：" + wujiang.名称;
+                            document.querySelector("#wujiangLevel").textContent = "等级：" + wujiang.等级;
+                            document.querySelector("#wujiangProfession").textContent = "职业：" + wujiang.职业;
+
+                            document.querySelector("#wujiangAttack").textContent = "攻：" + wujiang.攻;
+                            document.querySelector("#wujiangDef").textContent = "受：" + wujiang.受;
+                            document.querySelector("#wujiangSpeed").textContent = "速：" + wujiang.速;
+                            document.querySelector("#wujiangRange").textContent = "范：" + wujiang.范;
+                            document.querySelector("#wujiangMag").textContent = "魔：" + wujiang.魔;
+
+                            document.querySelector("#wujiangSpell").textContent = "技能：\n" + wujiang.技能;
+                            document.querySelector("#wujiangSpecs").textContent = "特性：\n" + wujiang.性质;
+
+                        }
                     })
             }
         )
