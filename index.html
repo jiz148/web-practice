@@ -12,6 +12,7 @@
         <script src="bootstrap/popper.min.js"></script>
         <script src="bootstrap/bootstrap.min.js" ></script>
         <!-- custom js scripts -->
+        <script src="sjs/ajaxUtils.js"></script>
         <script src="sjs/script.js"></script>
 
         <link rel="stylesheet" href="scss/style.css">
@@ -65,6 +66,26 @@
         </div>
         <div class="row">
             <h2>Hello Jinchi!</h2>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <button id="wujiangButton">Generate Wujiang</button>
+        </div>
+    </div>
+    <br>
+    <div id="wujiangContainer" class="container invisible">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p id="wujiang-name"></p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p id="wujiang-level"></p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p id="wujiang-profession"></p>
+            </div>
         </div>
     </div>
 </body>
