@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",
                     document.querySelector("#wujiangContainer").classList.remove("invisible");
                 }
                 else {
-                    document.querySelector("#wujiangContainer").classList.add("invisible")
+                    document.querySelector("#wujiangContainer").classList.add("invisible");
                     this.textContent = "Generate Wujiang";
                 }
 
@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded",
                         if (wujiang === undefined) {
                             wujiangTagList = document.querySelectorAll("#wujiangContainer div p")
                             for (let i = 0; i < wujiangTagList.length; i++) {
-                                wujiangTagList[i].textContent = ""
+                                wujiangTagList[i].textContent = "";
                             }
-                            document.querySelector("#wujiangName").textContent = "Did not find this Wujiang in record."
+                            document.querySelector("#wujiangName").textContent = "Did not find this Wujiang in record.";
                         }
                         else {
                             // assign values to web
@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded",
                             document.querySelector("#wujiangRange").textContent = "范：" + wujiang.范;
                             document.querySelector("#wujiangMag").textContent = "魔：" + wujiang.魔;
 
-                            document.querySelector("#wujiangSpell").textContent = "技能：\n" + wujiang.技能;
-                            document.querySelector("#wujiangSpecs").textContent = "特性：\n" + wujiang.性质;
+                            document.querySelector("#wujiangSpell").textContent = "技能：" + wujiang.技能;
+                            document.querySelector("#wujiangSpecs").textContent = "特性：" + wujiang.性质;
 
                         }
                     })
