@@ -10,7 +10,7 @@ $(function () {
     $("#header-nav .navbar-toggle").blur(hideToggle);
     // solve the focus issue in Firefox and Safari
     $("#header-nav .navbar-toggle").click(function (event) {
-            $(event.target()).focus();
+            $(event.targetTouches.focus();
         }
     )
 });
