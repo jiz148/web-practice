@@ -7,12 +7,7 @@ $(function () {
     }
 
     // hide toggle target when toggle button blurs
-    $("#header-nav .navbar-toggle").blur(hideToggle);
-    // solve the focus issue in Firefox and Safari
-    $("#header-nav .navbar-toggle").click(function (event) {
-            $(event.targetTouches).focus();
-        }
-    )
+    $("#header-nav .navbar-toggle").on("mouseleave blur", hideToggle);
 });
 
 (function (global) {
