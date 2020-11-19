@@ -1,14 +1,16 @@
 body {
     min-width: 280px;
     font-family: Calibri, serif;
+    background-color: #86cfda;
 }
 
 a {
     color: black;
 }
 
-.container-fluid {
+header, footer {
     padding: 0 0 0 0;
+    background-color: #f1b0b7;
 }
 
 a:focus, a:hover, a:active, a:visited {

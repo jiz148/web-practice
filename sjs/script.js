@@ -1,16 +1,3 @@
-$(function () {
-
-    function hideToggle (event) {
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 768) { // That is medium size of Twitter Bootstrap 4 2020
-            $("#navbar-toggle-target").collapse("hide");
-        }
-    }
-
-    // hide toggle target when toggle button blurs
-    $("#header-nav .navbar-toggle").on('mouseout blur', hideToggle);
-});
-
 document.addEventListener("DOMContentLoaded",
     function (event) {
         function sayHello (event) {
@@ -72,7 +59,6 @@ document.addEventListener("DOMContentLoaded",
 
                             document.querySelector("#wujiangSpell").textContent = "技能：" + wujiang.技能;
                             document.querySelector("#wujiangSpecs").textContent = "特性：" + wujiang.性质;
-
                         }
                     })
             }
