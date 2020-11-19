@@ -1,12 +1,14 @@
 $(function () {
 
-    // hide toggle target when toggle button blurs
-    $("#header-nav .navbar-toggle").blur(function (event) {
+    function hideToggle (event) {
         const screenWidth = window.innerWidth;
         if (screenWidth < 768) { // That is medium size of Twitter Bootstrap 4 2020
             $("#navbar-toggle-target").collapse("hide");
         }
-    });
+    }
+
+    // hide toggle target when toggle button blurs
+    $("#header-nav .navbar-toggle").blur(hideToggle);
 });
 
 document.addEventListener("DOMContentLoaded",
