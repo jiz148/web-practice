@@ -8,7 +8,7 @@ $(function () {
     }
 
     // hide toggle target when toggle button blurs
-    $("#header-nav .navbar-toggle").blur(hideToggle);
+    $("#header-nav .navbar-toggle").on('mouseout blur', hideToggle);
 });
 
 document.addEventListener("DOMContentLoaded",
