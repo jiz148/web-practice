@@ -16,9 +16,9 @@ $(function () {
     const dc = {};
 
     // url addresses
-    const homeUrl = "snippets/home-snippet.html";
-    const showCasesUrl = "snippets/show-cases.html";
-    const blogUrl = "snippets/blog.html";
+    dc.homeUrl = "snippets/home-snippet.html";
+    dc.showCasesUrl = "snippets/show-cases.html";
+    dc.blogUrl = "snippets/blog.html";
 
     // function for inserting innerHTML for 'select'
     function insertHtml (selector, html) {
@@ -37,7 +37,7 @@ $(function () {
     document.addEventListener("DOMContentLoaded", function (event) {
         // show home snippet
         showLoading("#main-content");
-        loadPage(homeUrl)
+        loadPage(dc.homeUrl)
     });
 
     function loadPage (url) {
