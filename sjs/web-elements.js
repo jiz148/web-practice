@@ -9,7 +9,7 @@ $(function () {
 
     // hide toggle target when toggle button blurs
     // $("#header-nav .navbar-toggle").on("mouseleave blur", hideToggle);
-    $("body").click(function (event) {
+    $("body").on("touchend click", function (event) {
         hideToggle();
     });
 });
