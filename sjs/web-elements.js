@@ -1,4 +1,5 @@
 $(function () {
+
     function hideToggle (event) {
         const screenWidth = window.innerWidth;
         if (screenWidth < 768) { // That is medium size of Twitter Bootstrap 4 2020
@@ -14,8 +15,10 @@ $(function () {
 
     const dc = {};
 
-    // html addresses
-    homeHtml = "snippets/home-snippet.html";
+    // url addresses
+    homeUrl = "snippets/home-snippet.html";
+    showCasesUrl = "snippets/show-cases.html";
+    blogUrl = "snippets/blog.html"
 
     // function for inserting innerHTML for 'select'
     function insertHtml (selector, html) {
@@ -34,23 +37,36 @@ $(function () {
     document.addEventListener("DOMContentLoaded", function (event) {
         // show home snippet
         showLoading("#main-content");
+        loadPage(homeUrl)
+    });
+
+    function loadPage (url) {
         $ajaxUtils.sendGetRequest(
-            "snippets/home-snippet.html",
+            url,
             function (responseText) {
                 insertHtml("#main-content", responseText);
             },
             false);
-    });
+    }
+
+
 
     // secret feature~
     let count = 0;
     document.addEventListener("touchend",
         function (event) {
-            count += 1;
-            if (count === 25) {
-                document.querySelector("#header-nav a span").textContent = "Love Ning!";
+            if (event.target === document.querySelector("#title")) {
+                count += 1;
+            }
+            if (count === 15) {
+                document.querySelector("#title").textContent = "Loves Ning!";
             }
         }
     );
+
+    // expose to window
+    dc.loadPage = loadPage
+
+    global.$dc = dc
 
 })(window);

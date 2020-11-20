@@ -47,6 +47,12 @@ a.navbar-brand span {
     background-color: darkcyan;
 }
 
+#description {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
 @media (max-width: 375px) {
     a.navbar-brand span {
         font-size: 1.5em;
