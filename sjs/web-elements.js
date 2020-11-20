@@ -1,17 +1,22 @@
-// $(function () {
-//
-//     function hideToggle (event) {
-//         const screenWidth = window.innerWidth;
-//         if (screenWidth < 768) { // That is medium size of Twitter Bootstrap 4 2020
-//             $("#navbar-toggle-target").collapse("hide");
-//         }
-//     }
-//
-//     // hide toggle target when toggle button blurs
-//     $("#header-nav .navbar-toggle").on("mouseleave blur", hideToggle);
-// });
+$(function () {
+
+    function hideToggle (event) {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 768) { // That is medium size of Twitter Bootstrap 4 2020
+            $("#navbar-toggle-target").collapse("hide");
+        }
+    }
+
+    // hide toggle target when toggle button blurs
+    // $("#header-nav .navbar-toggle").on("mouseleave blur", hideToggle);
+    $(document).click(function (event) {
+        hideToggle()
+    });
+});
+
 
 (function (global) {
+
 
     const dc = {};
 
