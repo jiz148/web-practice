@@ -16,9 +16,9 @@ $(function () {
     const dc = {};
 
     // url addresses
-    homeUrl = "snippets/home-snippet.html";
-    showCasesUrl = "snippets/show-cases.html";
-    blogUrl = "snippets/blog.html"
+    const homeUrl = "snippets/home-snippet.html";
+    const showCasesUrl = "snippets/show-cases.html";
+    const blogUrl = "snippets/blog.html"
 
     // function for inserting innerHTML for 'select'
     function insertHtml (selector, html) {
