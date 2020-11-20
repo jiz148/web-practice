@@ -35,7 +35,6 @@ a.navbar-brand span {
 }
 
 #navbar-toggle-target li {
-    cursor: pointer;
     background-color: darkturquoise;
     text-align: center;
     font-size: 1.5em;
