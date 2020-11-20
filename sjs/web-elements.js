@@ -9,8 +9,8 @@ $(function () {
 
     // hide toggle target when toggle button blurs
     // $("#header-nav .navbar-toggle").on("mouseleave blur", hideToggle);
-    $(document).click(function (event) {
-        hideToggle()
+    $("body").click(function (event) {
+        hideToggle();
     });
 });
 
