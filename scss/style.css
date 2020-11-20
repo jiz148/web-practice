@@ -2,6 +2,7 @@ body {
     min-width: 280px;
     font-family: Calibri, serif;
     background-color: #86cfda;
+    cursor: pointer;
 }
 
 a {
