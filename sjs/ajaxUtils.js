@@ -26,7 +26,7 @@
         request.send(null);
     }
 
-    function handleResponse(request, requestHandler, isJsonResponse) {
+    function handleResponse(request, responseHandler, isJsonResponse) {
         if ((request.readyState == 4) && (request.status == 200)) {
 
             //Default to isJsonResponse = ture
@@ -35,10 +35,10 @@
             }
 
             if (isJsonResponse) {
-                requestHandler(JSON.parse(request.responseText));
+                responseHandler(JSON.parse(request.responseText));
             }
             else {
-                requestHandler(request.responseText);
+                responseHandler(request.responseText);
             }
         }
     }
